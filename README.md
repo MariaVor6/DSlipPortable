@@ -1,2 +1,7 @@
 # DSlipPortable
-Описание процесса сборки проекта и возникших ошибок
+# Установка Boost используя vcpkg
+Команда для поиска расположения vcpkg
+```
+Get-Command vcpkg -ErrorAction SilentlyContinue | Select-Object Source
+```
+
