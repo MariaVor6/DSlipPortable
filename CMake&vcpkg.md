@@ -47,11 +47,14 @@ set "VCPKG_ROOT=C:\Program Files\vcpkg"
    или без кавычек
 set VCPKG_ROOT=C:\Program Files\vcpkg
 ```
-   Это нужно для того, что бы не вводит каждый раз полный путь.
+
+ Это нужно для того, что бы не вводит каждый раз полный путь.
    
-    ```cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake"```
+```
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake"
+```
    
-   > Обратите внимание что переменная ```VCPKG_ROOT``` содержится в файле ```CMakePresets.json```
+> Обратите внимание что переменная ```VCPKG_ROOT``` содержится в файле ```CMakePresets.json```
 
  **!** Для сохранения переменной навсегда добавляем её в переменное окружение Windows.
    
